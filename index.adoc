@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: Discover your StorageGRID systems through Cloud Manager to get a complete view of data across your hybrid multicloud. 
+summary: 通过Cloud Manager发现您的StorageGRID 系统、全面了解混合多云中的数据。 
+---
+= StorageGRID 文档
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

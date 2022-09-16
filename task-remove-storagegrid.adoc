@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task-remove-storagegrid.html 
+keywords: storagegrid, cluster, remove, delete, remove storagegrid, delete cluster, delete working environment, remove working environment 
+summary: 如果您不想再从Cloud Manager管理StorageGRID 工作环境、请将其删除。 
+---
+= 删除StorageGRID 工作环境
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您不想再从Cloud Manager管理StorageGRID 工作环境、请将其删除。
+
+删除工作环境不会影响StorageGRID 系统。您可以随时从 Cloud Manager 重新发现它。
+
+.步骤
+. 在"画布"中、双击StorageGRID 工作环境的名称。
+. 单击菜单图标并选择*从工作空间中删除*。
++
+image:screenshot-remove.png["工作环境右上角菜单中提供的从工作空间删除选项的屏幕截图。"]
+
+. 单击 * 删除 * 进行确认。
+

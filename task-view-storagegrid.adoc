@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: task-view-storagegrid.html 
+keywords: storagegrid, cluster, view, alerts, nodes, tenants, capacity, used capacity, free capacity, system ID, domain, IP, object data used, object metadata used, cpu usage, quota utilization, quota 
+summary: 发现StorageGRID 系统后、您可以查看有关容量分布以及关联警报、节点和租户的详细信息。 
+---
+= 查看StorageGRID 系统
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+发现StorageGRID 系统后、您可以查看有关容量分布以及关联警报、节点和租户的详细信息。
+
+.步骤
+. 在"画布"中、双击要查看的StorageGRID 工作环境的名称。
+. 选择任何选项卡可查看有关StorageGRID 系统的更多详细信息：
++
+** *概述*：系统容量分布(已用容量和可用容量)、系统警报数量、节点和租户等的详细视图。
++
+image:screenshot-overview.png["StorageGRID 工作环境中\"概述\"选项卡的屏幕截图。"]
+
+** *警报*：系统警报摘要、其中包括活动警报、已解决警报和静音警报。
+** *节点*：有关管理节点、API网关节点和存储节点的详细信息。其中包括已用对象数据、已用对象元数据和CPU使用量的百分比。
++
+image:screenshot-nodes.png["StorageGRID 工作环境中节点选项卡的屏幕截图。"]
+
+** *租户*：有关租户的关键详细信息、包括已用逻辑空间、配额利用率、配额和对象计数。
++
+image:screenshot-tenants.png["StorageGRID 工作环境中的租户选项卡的屏幕截图。"]
+
+
+
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-enable-data-services.html 
+keywords: storagegrid, cloud sync, cloud backup, backup, back up data 
+summary: 在Cloud Manager中发现StorageGRID 系统后、您可以将NetApp的数据服务与StorageGRID 结合使用来进行备份和数据同步。 
+---
+= 将NetApp数据服务与StorageGRID 结合使用
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在Cloud Manager中发现StorageGRID 系统后、您可以使用NetApp的数据服务进行备份和数据同步。
+
+* 使用*云备份*将数据从内部ONTAP 系统备份到NetApp StorageGRID 系统中的对象存储。
++
+要开始使用、请转到"画布"并将内部部署的ONTAP 工作环境拖放到您的StorageGRID 工作环境中。
+
++
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解有关将内部ONTAP 数据备份到StorageGRID 的更多信息"^]
+
+* 使用* Cloud Sync 与StorageGRID 系统之间的数据同步*。
++
+要开始使用、请转到"画布"并将源工作环境拖放到目标工作环境上。StorageGRID 可以是源或目标。
+
++
+https://docs.netapp.com/us-en/cloud-manager-sync/index.html["了解有关 Cloud Sync 的更多信息"^]
+
+

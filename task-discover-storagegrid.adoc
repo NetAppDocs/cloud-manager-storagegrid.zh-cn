@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: task-discover-storagegrid.html 
+keywords: storagegrid, cluster, discover, manage, discovering, discover storagegrid 
+summary: Cloud Manager可以发现内部环境中的StorageGRID 系统。通过将StorageGRID 集群添加到Cloud Manager、您可以全面了解混合多云中的数据。 
+---
+= 发现StorageGRID 系统
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Cloud Manager可以发现内部环境中的StorageGRID 系统。通过将StorageGRID 系统添加到Cloud Manager、您可以全面了解混合多云中的数据。
+
+.您需要什么？ #8217 ；将需要什么
+* 一种安装在云提供商或内部环境中并通过网络连接到StorageGRID 系统的连接器。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["了解有关连接器以及如何创建连接器的更多信息"^]
+
+* 管理节点的域名或IP地址。
+* 管理节点的管理员凭据。
+
+
+.步骤
+. 在"画布"中、单击*添加工作环境*、然后选择*内部环境*。
+. 选择* StorageGRID *并单击*下一步*。
+. 如果出现提示，请创建 Connector 。
++
+有关详细信息、请参见上述链接。
+
+. 在_Cluster StorageGRID Details_页面上、输入管理节点的域名或IP地址、该节点的凭据、然后单击*添加*。
++
+image:screenshot-cluster-details.png["屏幕截图显示了StorageGRID 集群详细信息页面、您可以在此页面中输入管理节点的域名或IP地址以及凭据。"]
+
+
+
+Cloud Manager可发现StorageGRID 系统并将其添加为Canvas上的工作环境。
+
+image:screenshot-canvas.png["显示Cloud Manager画布上的StorageGRID 工作环境的屏幕截图。"]
