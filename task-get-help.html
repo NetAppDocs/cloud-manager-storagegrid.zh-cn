@@ -9,14 +9,14 @@
   <meta property="og:title" content="获取帮助 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud-manager-storagegrid/task-get-help.html" />
-	<meta property="og:description" content="NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。" />
+	<meta property="og:description" content="NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud-manager-storagegrid/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。">
   <meta name="keywords" content=" help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloud-manager-storagegrid/images/favicon.ico" type="image/x-icon">
 
@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/zh-cn/cloud-manager-storagegrid"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -256,6 +267,8 @@
         </a>
       </div>
 
+      
+      
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
@@ -484,7 +497,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-storagegrid/images/left_arrow.png" alt=""><pre>所有 Cloud Manager 文档</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-storagegrid/images/left_arrow.png" alt=""><pre>所有BlueXP文档</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -508,7 +521,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 入门</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="发现您的StorageGRID 系统"
@@ -524,7 +537,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 管理StorageGRID 系统</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="查看StorageGRID 系统"
@@ -554,7 +567,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 知识和支持</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="注册以获得支持"
@@ -587,6 +600,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -610,7 +624,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -646,7 +660,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-19 13:06:28 +0000">09/19/2022</time>
+    <time datetime="2022-11-01 15:14:02 +0000">11/01/2022</time>
     
   
 
@@ -659,7 +673,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>NetApp 通过多种方式为 Cloud Manager 及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</p>
+<p>NetApp通过多种方式为BlueXP及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</p>
 </div>
 </div>
 </div>
@@ -674,25 +688,25 @@
 <li>
 <p><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services" target="_blank" rel="noopener">"知识库"</a></p>
 <div class="paragraph">
-<p>通过 Cloud Manager 知识库搜索，查找有助于解决问题的文章。</p>
+<p>搜索BlueXP知识库、查找有助于解决问题的文章。</p>
 </div>
 </li>
 <li>
 <p><a href="http://community.netapp.com/" target="_blank" rel="noopener">"社区"</a></p>
 <div class="paragraph">
-<p>加入 Cloud Manager 社区，关注正在进行的讨论或创建新的讨论。</p>
+<p>加入BlueXP社区、关注正在进行的讨论或创建新的讨论。</p>
 </div>
 </li>
 <li>
 <p>文档。</p>
 <div class="paragraph">
-<p>您当前正在查看的 Cloud Manager 文档。</p>
+<p>您当前正在查看的BlueXP文档。</p>
 </div>
 </li>
 <li>
 <p>mailto ： <a href="mailto:ng-cloudmanager-feedback@netapp.com">ng-cloudmanager-feedback@netapp.com</a> （反馈电子邮件）</p>
 <div class="paragraph">
-<p>我们非常重视您的反馈意见。提交反馈以帮助我们改进 Cloud Manager 。</p>
+<p>我们非常重视您的反馈意见。提交反馈以帮助我们改进BlueXP。</p>
 </div>
 </li>
 </ul>
@@ -706,13 +720,13 @@
 <p>除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</p>
 </div>
 <div class="paragraph">
-<p>要使用*创建案例*功能、您必须先一次性注册Cloud Manager帐户ID序列号(即960xxxx)。 <a href="task-support-registration.html">"了解如何注册获取支持"</a>。</p>
+<p>要使用*创建案例*功能、您必须先一次性注册您的BlueXP帐户ID序列号(即960xxxx)。 <a href="task-support-registration.html">"了解如何注册获取支持"</a>。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
 <ol class="arabic">
 <li>
-<p>在 Cloud Manager 中，单击 * 帮助 &gt; 支持 * 。</p>
+<p>在BlueXP中、单击*帮助&gt;支持*。</p>
 </li>
 <li>
 <p>在 "Technical Support" 下选择一个可用选项：</p>
@@ -728,16 +742,16 @@
 <li>
 <p>* NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。</p>
 <div class="paragraph">
-<p>如果未看到您的NSS帐户、您可以导航到Cloud Manager支持部分中的* NSS管理*选项卡将其添加到该选项卡中。</p>
+<p>如果您未看到NSS帐户、则可以导航到BlueXP支持部分中的* NSS管理*选项卡以将其添加到该选项卡中。</p>
 </div>
 </li>
 <li>
-<p><strong>服务</strong>：选择与问题描述 关联的服务。例如、Cloud Manager适用于具有服务中工作流或功能的技术支持问题描述。</p>
+<p><strong>服务</strong>：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。</p>
 </li>
 <li>
 <p><strong>工作环境</strong>：如果适用于存储、请选择* Cloud Volumes ONTAP <strong>或</strong> on-Prem*、然后选择关联的工作环境。</p>
 <div class="paragraph">
-<p>工作环境列表属于您在服务顶部横幅中选择的Cloud Manager帐户、工作空间和连接器的范围。</p>
+<p>工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。</p>
 </div>
 </li>
 <li>
@@ -776,7 +790,7 @@
 <p>"您无权针对选定服务创建案例"</p>
 </div>
 <div class="paragraph">
-<p>此错误可能意味着NSS帐户及其关联的记录公司与Cloud Manager帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</p>
+<p>此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</p>
 </div>
 <div class="ulist">
 <ul>
@@ -827,11 +841,7 @@
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
-              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
-            </li>
-            <li class="n-footer__copyright-link">
-              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+              <a target="_self" href="javascript:netapp_mailto()">发送有关此页面的反馈</a>
             </li>
           </ul>
         </div>

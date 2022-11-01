@@ -9,14 +9,14 @@
   <meta property="og:title" content="注册以获得支持 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud-manager-storagegrid/task-support-registration.html" />
-	<meta property="og:description" content="在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。" />
+	<meta property="og:description" content="在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud-manager-storagegrid/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。">
   <meta name="keywords" content=" support registration, register for support, support, nss account, add nss account,"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloud-manager-storagegrid/images/favicon.ico" type="image/x-icon">
 
@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/zh-cn/cloud-manager-storagegrid"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -256,6 +267,8 @@
         </a>
       </div>
 
+      
+      
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
@@ -484,7 +497,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-storagegrid/images/left_arrow.png" alt=""><pre>所有 Cloud Manager 文档</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-storagegrid/images/left_arrow.png" alt=""><pre>所有BlueXP文档</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -508,7 +521,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 入门</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="发现您的StorageGRID 系统"
@@ -524,7 +537,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 管理StorageGRID 系统</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="查看StorageGRID 系统"
@@ -554,7 +567,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 知识和支持</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="注册以获得支持"
@@ -587,6 +600,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -610,7 +624,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -646,7 +660,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-16 20:16:22 +0000">09/16/2022</time>
+    <time datetime="2022-11-01 15:14:02 +0000">11/01/2022</time>
     
   
 
@@ -659,24 +673,87 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</p>
+<p>在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加NetApp 支持站点 (NSS)帐户、然后注册获取支持。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="添加-nss-帐户">添加 NSS 帐户</h2>
+<h2 id="支持注册概述">支持注册概述</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>通过支持信息板，您可以从一个位置添加和管理所有 NetApp 支持站点帐户。</p>
+<p>激活支持授权有两种形式的注册：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</p>
+<div class="paragraph">
+<p>这是您在BlueXP中使用的任何服务的单一支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。</p>
+</div>
+</li>
+<li>
+<p>在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</p>
+<div class="paragraph">
+<p>这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。</p>
+</div>
+<div class="paragraph">
+<p>您的注册方式取决于您是新客户还是现有客户或合作伙伴。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>现有客户或合作伙伴</p>
+<div class="paragraph">
+<p>作为现有NetApp客户或合作伙伴、您可以使用NetApp 支持站点 (NSS) SSO帐户执行上述注册。在支持信息板中、BlueXP提供了一个* NSS管理*页面、您可以在其中添加NSS帐户。添加NSS帐户后、BlueXP会自动为您注册这些序列号。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>an NSS account to BlueXP,了解如何添加NSS帐户。</pre>
+</div>
+</div>
+</li>
+<li>
+<p>NetApp新手</p>
+<div class="paragraph">
+<p>如果您是NetApp的新用户、则必须在NetApp的支持注册站点上一次性注册您的BlueXP帐户ID序列号。完成此注册并创建新的NSS帐户后、您可以在BlueXP中使用此帐户进行自动注册。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>with NetApp,了解如何向NetApp注册。</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="将nss帐户添加到bluexp">将NSS帐户添加到BlueXP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过支持信息板、您可以添加和管理NetApp 支持站点 帐户、以便与Cloud Manager结合使用。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</p>
+</li>
+<li>
+<p>如果您有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户一起添加。</p>
+</li>
+</ul>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
 <ol class="arabic">
 <li>
-<p>如果您还没有 NetApp 支持站点帐户， <a href="https://register.netapp.com/register/start" target="_blank" rel="noopener">"注册一个"</a>。</p>
-</li>
-<li>
-<p>在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。</p>
+<p>在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。</p>
 <div class="paragraph">
 <p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png" alt="帮助菜单的屏幕截图，其中列出的第一个选项为支持"></span></p>
 </div>
@@ -693,10 +770,23 @@
 <li>
 <p>在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</p>
 <div class="paragraph">
-<p>此操作可使 Cloud Manager 使用您的 NSS 帐户。</p>
+<p>通过这些操作、BlueXP可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。</p>
 </div>
 <div class="paragraph">
-<p>请注意，此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</p>
+<p>请注意以下事项：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</p>
+</li>
+<li>
+<p>成功登录后、NetApp将存储NSS用户名。这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png" alt="由三个水平点组成的图标"></span> 菜单。</p>
+</li>
+<li>
+<p>如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png" alt="由三个水平点组成的图标"></span> 菜单。使用此选项将提示您重新登录。</p>
+</li>
+</ul>
 </div>
 </li>
 </ol>
@@ -704,27 +794,123 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="注册您的帐户以获得支持">注册您的帐户以获得支持</h2>
+<h2 id="向netapp注册">向NetApp注册</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>支持注册可从 Cloud Manager 的支持信息板中获取。</p>
+<p>如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</p>
+</div>
+<div class="sect2">
+<h3 id="具有nss帐户的现有客户">具有NSS帐户的现有客户</h3>
+<div class="paragraph">
+<p>如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
 <ol class="arabic">
 <li>
-<p>在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。</p>
+<p>在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。</p>
 <div class="paragraph">
 <p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png" alt="帮助菜单的屏幕截图，其中列出的第一个选项为支持"></span></p>
 </div>
 </li>
 <li>
-<p>在 * 资源 * 选项卡中，单击 * 注册支持 * 。</p>
+<p>如果您尚未将NSS帐户添加到BlueXP、请执行此操作。</p>
 </li>
 <li>
-<p>选择要注册的 NSS 凭据，然后单击 * 注册 * 。</p>
+<p>在*资源*页面上、单击*注册支持*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png" alt="显示帐户序列号和注册支持选项的屏幕截图"></span></p>
+</div>
 </li>
 </ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="现有客户但无nss帐户">现有客户、但无NSS帐户</h3>
+<div class="paragraph">
+<p>如果您是现有的NetApp客户、拥有现有许可证和序列号、但拥有_no_ NSS帐户、则只需创建一个NSS帐户即可。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>完成以创建NetApp 支持站点 帐户 <a href="https://mysupport.netapp.com/site/user/registration" target="_blank" rel="noopener">"NetApp 支持站点 用户注册表"</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</p>
+</li>
+<li>
+<p>请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="netapp的新品牌">NetApp的新品牌</h3>
+<div class="paragraph">
+<p>如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png" alt="帮助菜单的屏幕截图，其中列出的第一个选项为支持"></span></p>
+</div>
+</li>
+<li>
+<p>从支持注册页面找到您的Cloud Manager帐户ID序列号。</p>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png" alt="帮助菜单的屏幕截图，其中列出的第一个选项为支持"></span></p>
+</div>
+</li>
+<li>
+<p>导航到 <a href="https://register.netapp.com" target="_blank" rel="noopener">"NetApp的支持注册站点"</a> 并选择*我不是NetApp注册客户*。</p>
+</li>
+<li>
+<p>填写必填字段(带有红色星号的字段)。</p>
+</li>
+<li>
+<p>在*产品线*字段中、选择*云管理器*、然后选择适用的计费提供商。</p>
+</li>
+<li>
+<p>复制上述第2步中的Cloud Manager帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</p>
+<div class="paragraph">
+<p>系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。</p>
+</div>
+</li>
+<li>
+<p>在电子邮件中确认操作。</p>
+<div class="paragraph">
+<p>确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</p>
+</div>
+</li>
+<li>
+<p>完成以创建NetApp 支持站点 帐户 <a href="https://mysupport.netapp.com/site/user/registration" target="_blank" rel="noopener">"NetApp 支持站点 用户注册表"</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</p>
+</li>
+<li>
+<p>请务必复制上面用于序列号字段的Cloud Manager帐户序列号(960xxxx)。这样可以加快帐户处理速度。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</p>
+</div>
+<div class="paragraph">
+<p>拥有NetApp 支持站点 帐户后、您可以导航到BlueXP以添加此NSS帐户以供将来注册。</p>
+</div>
 </div>
 </div>
 </div>
@@ -765,11 +951,7 @@
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
-              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
-            </li>
-            <li class="n-footer__copyright-link">
-              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+              <a target="_self" href="javascript:netapp_mailto()">发送有关此页面的反馈</a>
             </li>
           </ul>
         </div>
