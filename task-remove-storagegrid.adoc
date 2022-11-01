@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-remove-storagegrid.html 
 keywords: storagegrid, cluster, remove, delete, remove storagegrid, delete cluster, delete working environment, remove working environment 
-summary: 如果您不想再从Cloud Manager管理StorageGRID 工作环境、请将其删除。 
+summary: 如果您不想再从BlueXP管理StorageGRID 工作环境、请将其删除。 
 ---
 = 删除StorageGRID 工作环境
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 如果您不想再从Cloud Manager管理StorageGRID 工作环境、请�
 
 
 [role="lead"]
-如果您不想再从Cloud Manager管理StorageGRID 工作环境、请将其删除。
+如果您不想再从BlueXP管理StorageGRID 工作环境、请将其删除。
 
-删除工作环境不会影响StorageGRID 系统。您可以随时从 Cloud Manager 重新发现它。
+删除工作环境不会影响StorageGRID 系统。您可以随时从BlueXP中重新发现它。
 
 .步骤
 . 在"画布"中、双击StorageGRID 工作环境的名称。

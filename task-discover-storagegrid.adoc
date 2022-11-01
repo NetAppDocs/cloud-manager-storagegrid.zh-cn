@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-discover-storagegrid.html 
 keywords: storagegrid, cluster, discover, manage, discovering, discover storagegrid 
-summary: Cloud Manager可以发现内部环境中的StorageGRID 系统。通过将StorageGRID 集群添加到Cloud Manager、您可以全面了解混合多云中的数据。 
+summary: BlueXP可以发现内部环境中的StorageGRID 系统。通过将StorageGRID 集群添加到BlueXP、您可以全面了解混合多云中的数据。 
 ---
 = 发现StorageGRID 系统
 :hardbreaks:
@@ -13,7 +13,7 @@ summary: Cloud Manager可以发现内部环境中的StorageGRID 系统。通过�
 :imagesdir: ./media/
 
 
-Cloud Manager可以发现内部环境中的StorageGRID 系统。通过将StorageGRID 系统添加到Cloud Manager、您可以全面了解混合多云中的数据。
+BlueXP可以发现内部环境中的StorageGRID 系统。通过将StorageGRID 系统添加到BlueXP、您可以全面了解混合多云中的数据。
 
 .您需要什么？ #8217 ；将需要什么
 * 一种安装在云提供商或内部环境中并通过网络连接到StorageGRID 系统的连接器。
@@ -25,7 +25,8 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[
 
 
 .步骤
-. 在"画布"中、单击*添加工作环境*、然后选择*内部环境*。
+. 从导航菜单中、选择*存储>画布*。
+. 单击*添加工作环境*并选择*内部部署*。
 . 选择* StorageGRID *并单击*下一步*。
 . 如果出现提示，请创建 Connector 。
 +
@@ -37,6 +38,6 @@ image:screenshot-cluster-details.png["屏幕截图显示了StorageGRID 集群详
 
 
 
-Cloud Manager可发现StorageGRID 系统并将其添加为Canvas上的工作环境。
+BlueXP会发现StorageGRID 系统并将其作为工作环境添加到Canvas上。
 
-image:screenshot-canvas.png["显示Cloud Manager画布上的StorageGRID 工作环境的屏幕截图。"]
+image:screenshot-canvas.png["一个屏幕截图、显示了BlueXP画布上的StorageGRID 工作环境。"]

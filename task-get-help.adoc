@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。 
+summary: NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。 
 ---
 = 获取帮助
 :allow-uri-read: 
@@ -10,7 +10,7 @@ summary: NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提�
 :imagesdir: ../media/
 
 
-NetApp 通过多种方式为 Cloud Manager 及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。
+NetApp通过多种方式为BlueXP及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。
 
 
 
@@ -20,19 +20,19 @@ NetApp 通过多种方式为 Cloud Manager 及其云服务提供支持。全天�
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services["知识库"^]
 +
-通过 Cloud Manager 知识库搜索，查找有助于解决问题的文章。
+搜索BlueXP知识库、查找有助于解决问题的文章。
 
 * http://community.netapp.com/["社区"^]
 +
-加入 Cloud Manager 社区，关注正在进行的讨论或创建新的讨论。
+加入BlueXP社区、关注正在进行的讨论或创建新的讨论。
 
 * 文档。
 +
-您当前正在查看的 Cloud Manager 文档。
+您当前正在查看的BlueXP文档。
 
 * mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）
 +
-我们非常重视您的反馈意见。提交反馈以帮助我们改进 Cloud Manager 。
+我们非常重视您的反馈意见。提交反馈以帮助我们改进BlueXP。
 
 
 
@@ -42,10 +42,10 @@ NetApp 通过多种方式为 Cloud Manager 及其云服务提供支持。全天�
 
 除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。
 
-要使用*创建案例*功能、您必须先一次性注册Cloud Manager帐户ID序列号(即960xxxx)。 link:task-support-registration.html["了解如何注册获取支持"]。
+要使用*创建案例*功能、您必须先一次性注册您的BlueXP帐户ID序列号(即960xxxx)。 link:task-support-registration.html["了解如何注册获取支持"]。
 
 .步骤
-. 在 Cloud Manager 中，单击 * 帮助 > 支持 * 。
+. 在BlueXP中、单击*帮助>支持*。
 . 在 "Technical Support" 下选择一个可用选项：
 +
 .. 如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。
@@ -53,12 +53,12 @@ NetApp 通过多种方式为 Cloud Manager 及其云服务提供支持。全天�
 +
 *** * NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。
 +
-如果未看到您的NSS帐户、您可以导航到Cloud Manager支持部分中的* NSS管理*选项卡将其添加到该选项卡中。
+如果您未看到NSS帐户、则可以导航到BlueXP支持部分中的* NSS管理*选项卡以将其添加到该选项卡中。
 
-*** *服务*：选择与问题描述 关联的服务。例如、Cloud Manager适用于具有服务中工作流或功能的技术支持问题描述。
+*** *服务*：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。
 *** *工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。
 +
-工作环境列表属于您在服务顶部横幅中选择的Cloud Manager帐户、工作空间和连接器的范围。
+工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。
 
 *** *案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。
 +
@@ -83,7 +83,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 "您无权针对选定服务创建案例"
 
-此错误可能意味着NSS帐户及其关联的记录公司与Cloud Manager帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：
+此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：
 
 * 使用产品内聊天功能
 * 通过提交非技术案例 https://mysupport.netapp.com/site/help[]

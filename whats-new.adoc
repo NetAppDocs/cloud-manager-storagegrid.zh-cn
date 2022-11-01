@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, storagegrid' 
-summary: 了解在Cloud Manager中管理StorageGRID 系统的新增功能。 
+summary: 了解在BlueXP中管理StorageGRID 系统的新增功能。 
 ---
 = StorageGRID 管理的新增功能
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 了解在Cloud Manager中管理StorageGRID 系统的新增功能。
 
 
 [role="lead"]
-了解在Cloud Manager中管理StorageGRID 系统的新增功能。
+了解在BlueXP (以前称为Cloud Manager)中管理StorageGRID 系统的新增功能。
 
 
 
@@ -24,4 +24,4 @@ summary: 了解在Cloud Manager中管理StorageGRID 系统的新增功能。
 
 === 支持StorageGRID
 
-现在、您可以直接从Cloud Manager发现StorageGRID 系统。通过发现StorageGRID 、您可以全面了解混合多云中的数据。
+现在、您可以直接从BlueXP发现StorageGRID 系统。通过发现StorageGRID 、您可以全面了解混合多云中的数据。

@@ -47,5 +47,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-* link:media/notice_cloud_manager_3.9.pdf["有关 Cloud Manager 3.9 的注意事项"^]
+* link:media/notice_cloud_manager_3.9.pdf["有关BlueXP 3.9的通知"^]
 
