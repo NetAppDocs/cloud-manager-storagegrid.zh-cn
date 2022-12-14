@@ -42,6 +42,7 @@ NetApp通过多种方式为BlueXP及其云服务提供支持。全天候提供�
 
 除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。
 
+.开始之前
 要使用*创建案例*功能、您必须先一次性注册您的BlueXP帐户ID序列号(即960xxxx)。 link:task-support-registration.html["了解如何注册获取支持"]。
 
 .步骤
@@ -75,6 +76,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.完成后
 此时将显示一个弹出窗口、其中包含您的支持案例编号。NetApp支持专家将审核您的案例、并尽快与您联系。
 
 有关支持案例的历史记录、您可以单击*设置>时间线*并查找名为"创建支持案例"的操作。 最右侧的按钮可用于展开操作以查看详细信息。
